@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -21,6 +22,7 @@ public class DisplayAdverts extends AppCompatActivity
     private Database Database;
     @Override protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState); //Running the code in addition to the saved instance
         setContentView(R.layout.show_adverts); //Setting the content view to 'show_adverts.xml'
 

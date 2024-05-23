@@ -39,5 +39,15 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        Button btnShowMap = findViewById(R.id.showMap); //Finding a view with the id 'showMap' in the 'activity_main.xml' file to display as a button
+        btnShowMap.setOnClickListener(new View.OnClickListener() //Setting an on click listener to the 'Show Map' button located on the main page
+        {
+            @Override public void onClick(View v) { //When the button is clicked, the code below is used
+                Intent intent = new Intent(MainActivity.this, DisplayMap.class); //A new intent is created that will run the 'DisplayMap' class
+                startActivity(intent); //Starting the activity using the intent created in the line above
+            }
+        });
+
+
     };
 }

@@ -5,14 +5,19 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 //This class will be responsible when viewing individual adverts, as well as deleting them
 public class ViewAdverts extends AppCompatActivity {
+
+
     private Database Database;
     @Override protected void onCreate(Bundle savedInstanceState)
     {
